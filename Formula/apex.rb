@@ -1,4 +1,4 @@
-class Pensar < Formula
+class Apex < Formula
   desc "AI-powered penetration testing CLI tool with terminal UI"
   homepage "https://github.com/pensarai/apex"
   version "0.0.32"

@@ -1,12 +1,12 @@
-# Homebrew Tap for Pensar
+# Homebrew Tap for Apex
 
-This is the official Homebrew tap for [Pensar](https://github.com/pensarai/apex), an AI-powered penetration testing CLI tool.
+This is the official Homebrew tap for [Apex](https://github.com/pensarai/apex), an AI-powered penetration testing CLI tool by Pensar.
 
 ## Installation
 
 ```bash
 brew tap pensarai/apex
-brew install pensar
+brew install apex
 ```
 
 ## Usage
@@ -26,17 +26,16 @@ pensar --version
 
 ```bash
 brew update
-brew upgrade pensar
+brew upgrade apex
 ```
 
 ## Uninstalling
 
 ```bash
-brew uninstall pensar
+brew uninstall apex
 brew untap pensarai/apex
 ```
 
 ## License
 
 MIT
-
