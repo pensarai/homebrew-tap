@@ -26,6 +26,28 @@ class Apex < Formula
     bin.install "pensar"
   end
 
+  def caveats
+    <<~EOS
+ 
+         ██████╗ ███████╗███╗   ██╗███████╗ █████╗ ██████╗
+         ██╔══██╗██╔════╝████╗  ██║██╔════╝██╔══██╗██╔══██╗
+         ██████╔╝█████╗  ██╔██╗ ██║███████╗███████║██████╔╝
+         ██╔═══╝ ██╔══╝  ██║╚██╗██║╚════██║██╔══██║██╔══██╗
+         ██║     ███████╗██║ ╚████║███████║██║  ██║██║  ██║
+         ╚═╝     ╚══════╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝
+ 
+        AI Pentest Agent
+ 
+        To get started, run a pentest:
+ 
+          pensar
+ 
+        For more information visit https://pensarai.com
+        Documentation           https://docs.pensar.dev/apex
+        Join our community      https://discord.gg/pensar
+    EOS
+  end
+
   test do
     assert_match version.to_s, shell_output("#{bin}/pensar --version")
   end
