@@ -1,51 +1,29 @@
 class Apex < Formula
   desc "AI-powered penetration testing CLI tool with terminal UI"
   homepage "https://github.com/pensarai/apex"
-  version "0.0.66"
+  version "0.0.69"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/pensarai/apex/releases/download/v0.0.66/pensar-darwin-arm64.tar.gz"
-      sha256 "6fc0d4612db317b9b2404e66f1d6035319672cf45398aabfe7e9c8ff4e83fd9f"
+      url "https://github.com/pensarai/apex/releases/download/v0.0.69/pensar-darwin-arm64.tar.gz"
+      sha256 "0b988fb01fb43718d60045bb8922ad2ac7c35dc76da8bae583ada0bfc1add962"
     end
     on_intel do
-      url "https://github.com/pensarai/apex/releases/download/v0.0.66/pensar-darwin-x64.tar.gz"
-      sha256 "9abad84b9ce4c4ecbed9a7d1325e2967793e6add6497e1bd37099f0e36d89fe1"
+      url "https://github.com/pensarai/apex/releases/download/v0.0.69/pensar-darwin-x64.tar.gz"
+      sha256 "ce8258a3c9473dde1e31761c5aed7f010fa213dfdbae2f50cdd8a84ebd7df405"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/pensarai/apex/releases/download/v0.0.66/pensar-linux-x64.tar.gz"
-      sha256 "ceac3a7044feac59e7d63935cb056992ce301521311ecc0245c4db347388b811"
+      url "https://github.com/pensarai/apex/releases/download/v0.0.69/pensar-linux-x64.tar.gz"
+      sha256 "3e43f7eb820b9554e2d549aeb29243991cd4c1c734cb8da323fd419858e83035"
     end
   end
 
   def install
     bin.install "pensar"
-  end
-
-  def caveats
-    <<~EOS
- 
-         ██████╗ ███████╗███╗   ██╗███████╗ █████╗ ██████╗
-         ██╔══██╗██╔════╝████╗  ██║██╔════╝██╔══██╗██╔══██╗
-         ██████╔╝█████╗  ██╔██╗ ██║███████╗███████║██████╔╝
-         ██╔═══╝ ██╔══╝  ██║╚██╗██║╚════██║██╔══██║██╔══██╗
-         ██║     ███████╗██║ ╚████║███████║██║  ██║██║  ██║
-         ╚═╝     ╚══════╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝
- 
-        AI Pentest Agent
- 
-        To get started, run a pentest:
- 
-          pensar
- 
-        For more information visit https://pensarai.com
-        Documentation           https://docs.pensar.dev/apex
-        Join our community      https://discord.gg/pensar
-    EOS
   end
 
   test do
