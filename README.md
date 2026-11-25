@@ -36,6 +36,10 @@ brew uninstall apex
 brew untap pensarai/apex
 ```
 
+## Maintaining this tap
+
+`Formula/apex.rb` is written by the `homebrew` job of apex's [Release workflow](https://github.com/pensarai/apex/blob/canary/.github/workflows/release.yml) (`.github/workflows/release.yml`). On every Apex release it regenerates the formula from the release's assets, with each platform's URL and SHA-256 checksum, and commits it here. Do not edit the formula by hand: the next release overwrites any manual change. To change the formula, change the template in that workflow.
+
 ## License
 
 MIT
