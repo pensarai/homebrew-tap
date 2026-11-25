@@ -5,7 +5,7 @@ This is the official Homebrew tap for [Apex](https://github.com/pensarai/apex), 
 ## Installation
 
 ```bash
-brew tap pensarai/apex
+brew tap pensarai/tap
 brew install apex
 ```
 
@@ -33,7 +33,7 @@ brew upgrade apex
 
 ```bash
 brew uninstall apex
-brew untap pensarai/apex
+brew untap pensarai/tap
 ```
 
 ## Maintaining this tap
